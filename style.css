@@ -1,0 +1,96 @@
+/* Shared by every page. Colours follow the game's light and dark rooftops (src/styles.css). */
+@font-face {
+  font-family: 'Baloo 2';
+  src: url('fonts/baloo2-latin.woff2') format('woff2');
+  font-weight: 400 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/nunito-latin.woff2') format('woff2');
+  font-weight: 200 1000;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light dark;
+  --sky: #dde7ec;
+  --sky-top: #cfe0ea;
+  --sky-low: #f7e2d2;
+  --ink: #1c2630;
+  --muted: #5b6b72;
+  --card: #f7fafb;
+  --line: #cddae0;
+  --bird: #1f2a33;
+  --bird-sheen: #3b5160;
+  --sun: #ff7a30;
+  --link: #b84a0e;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sky: #10171d;
+    --sky-top: #060b10;
+    --sky-low: #172530;
+    --ink: #e6eef1;
+    --muted: #93a5ad;
+    --card: #1b2830;
+    --line: #2a3b45;
+    --bird: #0a0f13;
+    --bird-sheen: #4d6a7a;
+    --sun: #ff8f4d;
+    --link: #ffa36b;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(var(--sky-top), var(--sky) 45%, var(--sky-low)) fixed;
+  background-color: var(--sky);
+  color: var(--ink);
+  font: 17px/1.6 'Nunito', 'Segoe UI', system-ui, sans-serif;
+}
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2.5rem 16px 3rem;
+}
+h1, h2 {
+  font-family: 'Baloo 2', 'Nunito', system-ui, sans-serif;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+h1 { font-size: 2.4rem; }
+h2 { font-size: 1.35rem; margin-top: 2rem; }
+p, ul { margin: 0 0 1rem; }
+ul { padding-left: 1.3rem; }
+li { margin-bottom: 0.35rem; }
+a { color: var(--link); text-underline-offset: 2px; }
+.muted { color: var(--muted); }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.25rem 1.25rem 0.25rem;
+  margin: 1.5rem 0;
+}
+.hero { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.hero p { margin: 0; }
+
+.bird { width: 72px; height: 72px; flex: none; }
+.bird .body { fill: var(--bird); }
+.bird .sheen { fill: var(--bird-sheen); }
+.bird .beak { fill: var(--sun); }
+.bird .eye { fill: #fff; }
+
+nav { font-weight: 700; margin-bottom: 1.5rem; }
+footer {
+  border-top: 1px solid var(--line);
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}

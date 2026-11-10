@@ -1,0 +1,3 @@
+google.com, pub-3425826004896317, DIRECT, f08c47fec0942fa0
+# Unity: paste the full list from Unity dashboard > Monetization > Settings > Organization > App-ads.txt here.
+ownerdomain=100xgrowthaim-byte.github.io
