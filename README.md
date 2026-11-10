@@ -7,6 +7,7 @@ The website for Murmur: Bird Chain Puzzle, served by GitHub Pages at https://100
 | `index.html` | https://100xgrowthaim-byte.github.io/ | Play Console → Store settings → Website |
 | `murmur/index.html` | https://100xgrowthaim-byte.github.io/murmur/ | Support page |
 | `murmur/privacy.html` | https://100xgrowthaim-byte.github.io/murmur/privacy.html | Play Console privacy policy, and Murmur's Settings (`PRIVACY_URL`) |
+| `murmur/terms.html` | https://100xgrowthaim-byte.github.io/murmur/terms.html | Play Console → App-level trader status and Terms of Service |
 | `app-ads.txt` | https://100xgrowthaim-byte.github.io/app-ads.txt | AdMob and Unity. Must stay at the top level. |
 
 `.nojekyll` makes GitHub serve the files as they are.
